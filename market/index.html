@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverTouch | Market & Silver Dollars</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Live Rate Ticker -->
+    <div class="rate-ticker">
+        Today's Silver Rate: <span id="rate-value" class="rate-value">$24.50 / oz</span> <span id="rate-trend"
+            class="rate-trend">▲ +1.2%</span>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="../assets/images/logo.png" alt="SilverTouch Logo" style="height: 40px; width: auto;">
+                <span>Silver<span style="color: var(--color-gold);">Touch</span>.</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#collections" class="nav-link">Collections</a>
+                <a href="#" class="nav-link active" style="color: var(--color-gold);">Market & Dollars</a>
+                <a href="../index.html#about" class="nav-link">About Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="../index.html#contact" class="btn btn-primary">Inquire Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Market Overview Section -->
+    <section class="market-hero"
+        style="padding-top: 120px; padding-bottom: 60px; background-color: var(--color-silver-light); text-align: center;">
+        <div class="container">
+            <h1 class="section-title">Global Silver Market</h1>
+            <p class="section-subtitle">Real-time Spot Rates & Trends</p>
+
+            <div class="market-dashboard"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px;">
+                <!-- Card 1: Spot Price -->
+                <div class="market-card"
+                    style="background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.2rem; color: var(--color-text-gray); margin-bottom: 10px;">Spot Silver (oz)
+                    </h3>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-black); margin-bottom: 5px;">
+                        $24.50</div>
+                    <div style="color: #4CAF50; font-weight: 600;">▲ +0.32 (1.32%)</div>
+                </div>
+
+                <!-- Card 2: 1KG Bar Rate -->
+                <div class="market-card"
+                    style="background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.2rem; color: var(--color-text-gray); margin-bottom: 10px;">1KG Bar (Local)
+                    </h3>
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-black); margin-bottom: 5px;">Rs.
+                        245,000</div>
+                    <div style="color: var(--color-text-gray); font-size: 0.9rem;">Excl. Taxes</div>
+                </div>
+
+                <!-- Card 3: 24h High/Low -->
+                <div class="market-card"
+                    style="background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.2rem; color: var(--color-text-gray); margin-bottom: 10px;">24h Range</h3>
+                    <div style="display: flex; justify-content: space-between; margin-top: 15px;">
+                        <div style="text-align: left;">
+                            <span style="display: block; font-size: 0.8rem; color: var(--color-text-gray);">Low</span>
+                            <span style="font-size: 1.5rem; font-weight: 600;">$24.10</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="display: block; font-size: 0.8rem; color: var(--color-text-gray);">High</span>
+                            <span style="font-size: 1.5rem; font-weight: 600;">$24.85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Silver Dollars Collection -->
+    <section id="silver-dollars" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Silver Dollars</h2>
+            <p class="section-subtitle">American & International Classics</p>
+
+            <div class="product-grid">
+                <!-- Morgan Dollar -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <!-- Placeholder specific to coins if available, else general -->
+                        <div
+                            style="width: 150px; height: 150px; border-radius: 50%; background: #dcdcdc; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999; border: 4px solid #fff; box-shadow: inset 0 0 20px rgba(0,0,0,0.1);">
+                            IMG: Morgan
+                        </div>
+                    </div>
+                    <h3 class="product-name">Morgan Silver Dollar</h3>
+                    <p class="product-price">1878 - 1921</p>
+                    <p class="product-meta">90% Pure Silver</p>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px;">View Details</a>
+                </div>
+
+                <!-- Peace Dollar -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div
+                            style="width: 150px; height: 150px; border-radius: 50%; background: #dcdcdc; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999; border: 4px solid #fff; box-shadow: inset 0 0 20px rgba(0,0,0,0.1);">
+                            IMG: Peace
+                        </div>
+                    </div>
+                    <h3 class="product-name">Peace Silver Dollar</h3>
+                    <p class="product-price">1921 - 1935</p>
+                    <p class="product-meta">90% Pure Silver</p>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px;">View Details</a>
+                </div>
+
+                <!-- American Eagle -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div
+                            style="width: 150px; height: 150px; border-radius: 50%; background: #dcdcdc; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999; border: 4px solid #fff; box-shadow: inset 0 0 20px rgba(0,0,0,0.1);">
+                            IMG: Eagle
+                        </div>
+                    </div>
+                    <h3 class="product-name">American Silver Eagle</h3>
+                    <p class="product-price">2023 Type 2</p>
+                    <p class="product-meta">.999 Fine Silver</p>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px;">View Details</a>
+                </div>
+
+                <!-- Maple Leaf -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div
+                            style="width: 150px; height: 150px; border-radius: 50%; background: #dcdcdc; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999; border: 4px solid #fff; box-shadow: inset 0 0 20px rgba(0,0,0,0.1);">
+                            IMG: Maple
+                        </div>
+                    </div>
+                    <h3 class="product-name">Canadian Maple Leaf</h3>
+                    <p class="product-price">2023</p>
+                    <p class="product-meta">.9999 Fine Silver</p>
+                    <a href="#" class="btn btn-outline"
+                        style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="logo" style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <img src="../assets/images/logo.png" alt="SilverTouch Logo" style="height: 30px; width: auto;">
+                        <span>Silver<span style="color: var(--color-gold);">Touch</span>.</span>
+                    </h4>
+                    <p style="color: #999; font-size: 0.9rem;">
+                        Defining elegance with purity. <br>Your trusted partner in silver jewellery.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="#">Bridal Elegance</a></li>
+                        <li><a href="#">Pure Silver Luxury</a></li>
+                        <li><a href="#">Modern Wear</a></li>
+                        <li><a href="#">Gemstone Line</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="../index.html#contact">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Purity Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin" style="width: 16px; display: inline;"></i> Saddar Main Gold Market,
+                            Karachi</li>
+                        <li><i data-lucide="phone" style="width: 16px; display: inline;"></i> 03268300225</li>
+                        <li>contact@silvertouch.com</li>
+                    </ul>
+                    <a href="https://wa.me/923268300225" target="_blank" class="btn btn-outline"
+                        style="border-color: #555; color: #fff; margin-top: 10px; display: inline-flex; align-items: center; gap: 8px;">
+                        WhatsApp Us
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 SilverTouch Jewellery. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

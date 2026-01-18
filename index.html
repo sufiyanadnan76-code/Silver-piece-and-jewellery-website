@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverTouch | Premium Silver Jewellery</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons (Lucide implementation via script for vanilla) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Live Rate Ticker -->
+    <div class="rate-ticker">
+        Today's Silver Rate: <span id="rate-value" class="rate-value">Loading...</span> <span id="rate-trend"
+            class="rate-trend"></span>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="assets/images/logo.png" alt="SilverTouch Logo" style="height: 40px; width: auto;">
+                <span>Silver<span style="color: var(--color-gold);">Touch</span>.</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#rings" class="nav-link">Rings</a>
+                <a href="market/index.html" class="nav-link" style="color: var(--color-gold);">Market & Dollars</a>
+                <a href="#sets" class="nav-link">Sets & Chains</a>
+                <a href="#about" class="nav-link">About Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="assets/images/kbe_hero.png" alt="1KG KBE Fine Silver" class="hero-bg">
+        <div class="hero-overlay" style="background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2));">
+        </div>
+
+        <div class="hero-content" style="text-align: left; margin-left: var(--spacing-lg); max-width: 600px;">
+            <span class="hero-tagline" style="color: var(--color-gold); font-weight: 600;">Welcome to SilverTouch</span>
+            <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 20px;">The Purity of KBE<br>1KG Fine Silver
+            </h1>
+            <p style="font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9;">
+                Experience the weight of true value. Our flagship 1KG KBE Silver Bar is the definition of
+                investment-grade luxury.
+            </p>
+            <div style="display: flex; gap: 15px;">
+                <a href="#collections" class="btn btn-primary hero-btn">Explore Offering</a>
+                <a href="#contact" class="btn btn-outline" style="color: #fff; border-color: #fff;">Inquire Stock</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="collections" class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Curated Collections</h2>
+            <p class="section-subtitle">Discover our exclusive ranges</p>
+
+            <div class="category-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <!-- KBE -->
+                <div class="category-card">
+                    <img src="assets/images/cat_kbe.png" class="category-img" alt="1KG KBE Fine Silver">
+                    <span class="engraved-text" style="opacity: 0;">KBE</span>
+                    <!-- Hidden since it's already on image -->
+                    <div class="category-overlay">
+                        <h3 class="category-name">KBE 1KG</h3>
+                        <p>Fine Silver Piece</p>
+                    </div>
+                </div>
+                <!-- BMW -->
+                <div class="category-card">
+                    <img src="assets/images/cat_bmw.png" class="category-img" alt="1KG BMW Fine Silver"
+                        style="filter: blur(0.5px);">
+                    <span class="engraved-text">BMW</span>
+                    <div class="category-overlay">
+                        <h3 class="category-name">BMW 1KG</h3>
+                        <p>Fine Silver Piece</p>
+                    </div>
+                </div>
+                <!-- PSL -->
+                <div class="category-card">
+                    <img src="assets/images/cat_psl.png" class="category-img" alt="1KG PSL Fine Silver"
+                        style="filter: blur(0.5px);">
+                    <span class="engraved-text">PSL</span>
+                    <div class="category-overlay">
+                        <h3 class="category-name">PSL 1KG</h3>
+                        <p>Fine Silver Piece</p>
+                    </div>
+                </div>
+                <!-- BGL -->
+                <div class="category-card">
+                    <img src="assets/images/cat_bgl.png" class="category-img" alt="1KG BGL Fine Silver"
+                        style="filter: blur(0.5px);">
+                    <span class="engraved-text">BGL</span>
+                    <div class="category-overlay">
+                        <h3 class="category-name">BGL 1KG</h3>
+                        <p>Fine Silver Piece</p>
+                    </div>
+                </div>
+                <!-- GBL -->
+                <div class="category-card">
+                    <img src="assets/images/cat_gbl.png" class="category-img" alt="1KG GBL Fine Silver"
+                        style="filter: blur(0.5px);">
+                    <span class="engraved-text">GBL</span>
+                    <div class="category-overlay">
+                        <h3 class="category-name">GBL 1KG</h3>
+                        <p>Fine Silver Piece</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="rings" class="products-section">
+        <div class="container">
+            <h2 class="section-title">New Arrivals</h2>
+            <p class="section-subtitle">Trending Rings & Sets</p>
+
+            <div id="product-grid" class="product-grid">
+                <!-- Products rendered via JS -->
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="#" class="btn btn-outline">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about-section container">
+        <div class="about-image">
+            <img src="assets/images/craftsmanship.png" alt="Silver Craftsmanship" bis_size_override_width="true"
+                style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="about-content">
+            <h2 class="section-title" style="text-align: left;">Legacy of Purity</h2>
+            <p class="about-text">
+                Located in the heart of the prestigious <strong>Saddar Main Gold Market, Karachi</strong>, SilverTouch
+                is more than a brand—it is a legacy of trust.
+            </p>
+            <p class="about-text">
+                For decades, we have defined the standard of silver craftsmanship in Karachi. From the iconic 1KG KBE
+                Fine Silver Bars to our intricate bridal sets, every piece that leaves our showroom is a promise of 100%
+                purity and unmatched elegance.
+            </p>
+            <p class="about-text" style="color: var(--color-gold); font-weight: 500;">
+                Visit our flagship store to experience the best in class.
+            </p>
+            <a href="#contact" class="btn btn-primary">Visit Our Store</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="logo" style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/images/logo.png" alt="SilverTouch Logo" style="height: 30px; width: auto;">
+                        <span>Silver<span style="color: var(--color-gold);">Touch</span>.</span>
+                    </h4>
+                    <p style="color: #999; font-size: 0.9rem;">
+                        Defining elegance with purity. <br>Your trusted partner in silver jewellery.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="#">Bridal Elegance</a></li>
+                        <li><a href="#">Pure Silver Luxury</a></li>
+                        <li><a href="#">Modern Wear</a></li>
+                        <li><a href="#">Gemstone Line</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Purity Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin" style="width: 16px; display: inline;"></i> Saddar Main Gold Market,
+                            Karachi</li>
+                        <li><i data-lucide="phone" style="width: 16px; display: inline;"></i> 03268300225</li>
+                        <li>contact@silvertouch.com</li>
+                    </ul>
+                    <a href="https://wa.me/923268300225" target="_blank" class="btn btn-outline"
+                        style="border-color: #555; color: #fff; margin-top: 10px; display: inline-flex; align-items: center; gap: 8px;">
+                        WhatsApp Us
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 SilverTouch Jewellery. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
